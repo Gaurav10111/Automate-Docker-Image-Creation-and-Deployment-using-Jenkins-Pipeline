@@ -40,7 +40,7 @@ pipeline {
                     sh "docker pull $REGISTRY/$IMAGE_NAME:latest"
 
                     // Run container
-                    sh "docker run -d --name $CONTAINER_NAME -p 8080:80 $REGISTRY/$IMAGE_NAME:latest"
+                    sh "docker run -d --name $CONTAINER_NAME -p 8081:80 $REGISTRY/$IMAGE_NAME:latest"
                 }
             }
         }
