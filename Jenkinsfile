@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Gaurav10111/Automate-Docker-Image-Creation-and-Deployment-using-Jenkins-Pipeline.git'  // or use local Git repo
+                git branch: 'main', url: 'https://github.com/Gaurav10111/Automate-Docker-Image-Creation-and-Deployment-using-Jenkins-Pipeline.git'  // or use local Git repo
             }
         }
 
